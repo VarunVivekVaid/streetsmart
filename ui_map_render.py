@@ -110,10 +110,11 @@ def main():
                 popup_html = f"<p>Clip file {clip_file} not found.</p>"
 
             popup = folium.Popup(popup_html, max_width=400)
+            pin_color = "red" if row["pothole"] else "blue"
             folium.Marker(
                 location=[lat, lon],
                 popup=popup,
-                icon=folium.Icon(color="blue", icon="film", prefix="fa")
+                icon=folium.Icon(color=pin_color, icon="film", prefix="fa")
             ).add_to(folium_map)
 
         st.subheader("Map View")

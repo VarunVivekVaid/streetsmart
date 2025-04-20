@@ -187,13 +187,14 @@ def process_single_file(input_file, output_dir, segment_length=10):
     for idx, clip_file in enumerate(clip_files):
         duration = get_clip_duration(clip_file)
         if abs(duration - segment_length) < 0.1:
-            metadata = extract_clip_metadata(clip_file)
+            #metadata = extract_clip_metadata(clip_file)
             clip_data = {
                 "source_file": input_file,
                 "clip_file": clip_file,
                 "clip_index": idx,
                 "duration": duration,
-                "metadata": metadata,
+                #"metadata": metadata,
+                "pothole" : False,
                 # gps_data will be added after association.
             }
             file_clips.append(clip_data)
