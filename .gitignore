@@ -1,2 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
 venv/
-/venv/
+ENV/
+env/
+.env
+.venv
+env.bak/
+venv.bak/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Project specific
+*.MP4
+*.mp4
+*.avi
+*.mov
+*.wmv
+input_videos/
+output_clips/
+garmin - Copy/
+*.keras
+*.h5
+*.pkl
+*.model
+*.weights
+
+# Data files
+*.csv
+*.json
+*.log
+*.dat
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Local development settings
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
